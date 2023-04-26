@@ -1,0 +1,222 @@
+/* ==================================================================================================== */
+/* Progressive Enhancement CSS
+/* Mel Go Portfolio
+/* ==================================================================================================== */
+/* Colors:
+/* Green - #8CD055
+/* Blue - #4ADEDE
+/* Purple - #787FF6
+/* ==================================================================================================== */
+/* Layout Starting @ 360px Wide
+/* ==================================================================================================== */
+
+/* ==================================================================================================== */
+/* Browser Tweaks
+/* ==================================================================================================== */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+body {
+	/* Disabled subpixel antialiasing across MacOS/iOS systems */
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+/* ==================================================================================================== */
+/* Base/Reset CSS
+/* ==================================================================================================== */
+html {
+	/* Useful for url#anchors */
+	scroll-behavior: smooth;
+
+	/* Respects user defined font preferences */
+	font-size: 100%;
+
+	/* Use a more-intuitive box-sizing model */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Allow percentage-based heights */
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	/* Use a more-intuitive box-sizing model */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+:target {
+	/* Useful for url#anchors */
+	scroll-margin-top: 0;
+}
+
+body {
+	margin: 0;
+
+	/* Default typography styling */
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+
+	/* Allow percentage-based heights */
+	height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* Default line-height styling */
+	line-height: calc(1em + 0.5rem);
+
+	/* Avoid text overflows */
+	overflow-wrap: break-word;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	/* Improve media defaults */
+	border: 0;
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	/* Removes outline yet works for high contrast option */
+	outline-color: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+	/* Remove built-in form typography styles */
+	font: inherit;
+}
+
+input,
+textarea,
+select {
+	/* Default components styling [Change at will] */
+}
+
+table {
+	table-layout: fixed;
+}
+
+
+
+
+
+/* ==================================================================================================== */
+/* Header
+/* ==================================================================================================== */
+header {
+	min-height: 64px;
+}
+
+
+
+
+/* ==================================================================================================== */
+/* Content
+/* ==================================================================================================== */
+
+/* ==================== */
+/* Presentation
+/* ==================== */
+.hero {
+	padding: 3em 1.5em;
+	padding: clamp(3em, 1.8261em + 5.2174vw, 6em) 1.5em;
+	text-align: center;
+}
+
+.hero__title {
+	font-family: 'Comfortaa', cursive;
+	font-size: clamp(1.75rem, 1.4565rem + 1.3043vw, 2.5rem);
+	font-weight: 700;
+	margin: 0 0 2rem 0;
+}
+
+.hero__message {
+	font-family: 'Poppins', sans-serif;
+	font-size: clamp(1.125rem, 1.0761rem + 0.2174vw, 1.25rem);
+	font-weight: 400;
+	margin: 0 auto 3rem auto;
+	max-width: 40rem;
+}
+
+.hero img {
+	width: 100%;
+	max-width: 20rem;
+	margin: auto;
+}
+
+
+
+/* ==================== */
+/* Intro
+/* ==================== */
+.intro {
+	background-color: #787FF6;
+	color: white;
+	padding: clamp(3em, 1.8261em + 5.2174vw, 6em) 1.5em clamp(12em, 11.2174rem + 3.4783vw, 14em) 1.5em;
+	text-align: center;
+}
+
+.intro__title {
+	font-family: 'Comfortaa', cursive;
+	font-size: clamp(1.125rem, 0.9783rem + 0.6522vw, 1.5rem);
+	font-weight: 700;
+	margin: 0 0 2rem 0;
+}
+
+.intro__msg {
+	font-family: 'Poppins', sans-serif;
+	font-size: clamp(1rem, 0.9511rem + 0.2174vw, 1.125rem);
+	margin: 2rem auto 0 auto;
+	max-width: 40rem;
+}
+
+
+
+/* ==================== */
+/* Skill Set
+/* ==================== */
+.skillSet {
+	display: grid;
+	gap: 1rem;
+	margin: -9rem auto 0 auto;
+	padding: 3em 1.5em;
+	width: 90%;
+	max-width: 80rem;
+}
+
+.skillSet > div {
+	background-color: white;
+	border: 1px solid #eee;
+	border-radius: 16px;
+}
+
+
+
+
+
+/* ==================================================================================================== */
+/* Footer
+/* ==================================================================================================== */
