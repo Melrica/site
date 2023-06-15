@@ -31,4 +31,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+	/* ==================== */
+	/* Testimonials
+	/* ==================== */
+	const cards = document.querySelectorAll('.testimonial__card');
+	const ctas = document.querySelectorAll('.testimonial__cta');
+
+	document.querySelector('.jsNextTestimonial').addEventListener('click', function (e) {
+		if (!this.classList.contains('--disabled')) {
+			cards[0].classList.add('--hidden');
+			ctas[1].classList.add('--disabled')
+
+			cards[1].classList.remove('--hidden');
+			ctas[0].classList.remove('--disabled')
+		};
+	});
+
+	document.querySelector('.jsPrevTestimonial').addEventListener('click', function (e) {
+		if (!this.classList.contains('--disabled')) {
+			cards[1].classList.add('--hidden');
+			ctas[0].classList.add('--disabled')
+
+			cards[0].classList.remove('--hidden');
+			ctas[1].classList.remove('--disabled')
+		};
+	});
+
 });
